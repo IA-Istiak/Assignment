@@ -1,0 +1,33 @@
+package sumOfdigits;
+
+import java.util.Scanner;
+
+public class Armstrong_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//153 >> 1^3 + 5^3+3^3 == 153 
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number:");
+		int num = sc.nextInt();
+		int temp = num;
+		int sum = 0;
+		int r;
+		
+		while(temp!=0) {
+			r = temp%10;
+			sum = sum+(r*r*r);
+			temp = temp/10;
+		}
+		if(sum == num) {
+			System.out.println(sum + " Is a Armstrong_number " + num );
+		}
+		else {
+			System.out.println(sum + " Is not a Armstrong_number " + num );
+		}
+		
+
+	}
+
+}

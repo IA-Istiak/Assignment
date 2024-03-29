@@ -10,7 +10,15 @@ public class Main {
 		t.subject = "CSE";
 		
 		t.display2();
+		t.display1();
+		
 		System.out.println("Hellow");
+		
+		Person p = new Teacher();
+		
+		p.display1();
+		
+		 
 
 	}
 
